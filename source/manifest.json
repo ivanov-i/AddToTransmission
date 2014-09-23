@@ -3,5 +3,10 @@
     "description": "Add magnet and .torrent links to a remote Transmission client.",
     "minimum_chrome_version": "39",
     "name": "AddToTransmission",
-    "version": "0"
+    "version": "0",
+
+    "content_scripts": [ {
+        "js": [ "scripts/inject.js" ],
+        "matches": [ "http://*/*", "https://*/*" ]
+    } ]
 }
